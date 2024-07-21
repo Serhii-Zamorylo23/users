@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const users=[
   {
-    name:"Oleh",
+    name:"Oleg",
     phone:"+380666555"
   },
   {
@@ -18,7 +18,7 @@ const users=[
 ]
 const reRenderDom=(users)=>{
   root.render(
-    <App user={users} reRenderDom={reRenderDom}/>
+    <App users={users} reRenderDom={reRenderDom}/>
   );
 }
 reRenderDom(users)

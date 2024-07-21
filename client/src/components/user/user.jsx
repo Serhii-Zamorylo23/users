@@ -1,7 +1,6 @@
 import s from "./user.module.scss"
 import UsersItem from "./userItem"
-
-const User = ({users}) => {
+const Users = ({users}) => {
   return (
     <div className="container">
       <h2>Users list</h2>
@@ -13,4 +12,4 @@ const User = ({users}) => {
     </div>
   );
 };
-export default User
+export default Users
