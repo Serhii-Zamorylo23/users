@@ -17,8 +17,16 @@ const Form =({users,reRenderDom})=>{
   return(
     <div className="container">
       <input
-      onChange={(e)=>handleUpdateForm(name)}
-      />
+       onChange={(e)=>handleUpdateForm("name",e.target.value)}
+       type="text"
+       placeholder="write name"
+      ></input>
+      <input
+       onChange={(e)=>handleUpdateForm("phone",e.target.value)}
+       type="text"
+       placeholder="write phone"
+      ></input>
+      <button onClick={handleAddUser}>Create user</button>
     </div>
   )
 }
